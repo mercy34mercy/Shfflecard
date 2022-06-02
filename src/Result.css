@@ -1,12 +1,41 @@
-.result{
-    text-align: center;
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+    gap: 1rem;
 }
 
-.groupbox{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3rem;
-    width: 40%;
-    border: 2px solid;  
-    border-color: #031de2;
+.title{
+    text-align: center;
+    font-size: 2rem;
+    color: blue;
+}
+
+.card {
+    box-shadow:
+        0 0.2px 0.3px rgba(0, 0, 0, 0.017),
+        0 0.4px 0.7px rgba(0, 0, 0, 0.024),
+        0 0.6px 1.2px rgba(0, 0, 0, 0.03),
+        0 1px 1.9px rgba(0, 0, 0, 0.035),
+        0 1.5px 2.9px rgba(0, 0, 0, 0.04),
+        0 2.4px 4.5px rgba(0, 0, 0, 0.046),
+        0 4px 7.5px rgba(0, 0, 0, 0.053),
+        0 8px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 4px;
+}
+
+.card__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+    gap: 1rem;
 }

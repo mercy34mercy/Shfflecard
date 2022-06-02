@@ -7,7 +7,7 @@ import { GotoResult } from './gotoResultButtton';
 
 export const Listinputbar = () => {
     const navigate = useNavigate();
-    const [member, setmember] = React.useState<string[]>(["マーシー","しゅんき","しゅんや","きょうへい","わかな"])
+    const [member, setmember] = React.useState<string[]>(["マーシー","しゅんき","りゅうのすけ","しゅんや","きょうへい","わかな","ゆき","こたろう","ゆいぴ","いおり","真一","ひろき","かけるさん","ほしさん","はやと","しょーごさん"])
     const [barindex, setbarindex] = React.useState(member.length)
     const [people, setpeople] = React.useState(0)
 

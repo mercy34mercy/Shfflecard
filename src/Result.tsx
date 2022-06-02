@@ -32,8 +32,7 @@ export const Result = () => {
         )
     } else {
         return (
-            <div >
-                <div >
+            <div>
                     {
                         (function () {
                             const members = shuffle(member.member);
@@ -44,19 +43,18 @@ export const Result = () => {
                         
                                 if (list[i % group.group] == null) {
                                     list[i % group.group] = []
-                                    list[i % group.group].push(<p key={0}>グループ{i % group.group + 1}</p>)
+                                    list[i % group.group].push(<p className='title' key={0}>グループ{i % group.group + 1}</p>)
                                 }
-                                list[i % group.group].push(<p>{members[i]}</p>)
+                                list[i % group.group].push(<p className='card__content'>{members[i]}</p>)
                             }
                             for (let i = 0; i < group.group; i++) {
-                                response.push(<div key={i} className='groupbox'>{list[i]}</div>)
+                                response.push(<div key={i} className='card'>{list[i]}</div>)
                                 console.log(response)
                             }
                     
-                            return <div className='result'>{response}</div>
+                        return <div className='container'>{response}</div>
                         }())
                     }
-                </div>
             </div>
         
         )
