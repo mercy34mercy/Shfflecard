@@ -3,7 +3,7 @@ import { Inputbar } from './Createinputbar';
 import { Indexbutton } from './setindexbutton';
 import { useNavigate } from 'react-router-dom';
 import { Start } from './Start';
-import { group } from 'console';
+import { GotoResult } from './gotoResultButtton';
 
 export const Listinputbar = () => {
     const navigate = useNavigate();
@@ -49,7 +49,7 @@ export const Listinputbar = () => {
             </div>
             <Indexbutton handlechangeindex={setbarindex} handleindex={barindex}></Indexbutton>
             <Start people={people} handlegroupchangedown={handlegroupchangedown} handlegroupchangeup={handlegroupchangeup}></Start>
-            <button onClick={handlechange}>結果を見る</button>
+            <GotoResult handlechange={handlechange}></GotoResult>
         </div>
         
     )
