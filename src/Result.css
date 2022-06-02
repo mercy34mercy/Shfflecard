@@ -1,0 +1,12 @@
+.result{
+    text-align: center;
+}
+
+.groupbox{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    width: 40%;
+    border: 2px solid;  
+    border-color: #031de2;
+}
