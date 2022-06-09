@@ -1,4 +1,5 @@
 import React from 'react';
+import "./ListInputbar.css"
 import { Inputbar } from './Createinputbar';
 import { Indexbutton } from './setindexbutton';
 import { useNavigate } from 'react-router-dom';
@@ -7,8 +8,8 @@ import { GotoResult } from './gotoResultButtton';
 
 export const Listinputbar = () => {
     const navigate = useNavigate();
-    const [member, setmember] = React.useState<string[]>(["マーシー","しゅんき","りゅうのすけ","しゅんや","きょうへい","わかな","ゆき","こたろう","ゆいぴ","いおり","真一","ひろき","かけるさん","ほしさん","はやと","しょーごさん"])
-    const [barindex, setbarindex] = React.useState(member.length)
+    const [member, setmember] = React.useState<string[]>([])
+    const [barindex, setbarindex] = React.useState(1)
     const [people, setpeople] = React.useState(0)
 
 
@@ -36,6 +37,8 @@ export const Listinputbar = () => {
     
     return (
         <div className='app'>
+            <p className='sitetitle'>Team Maker</p> 
+            <p>名前を入力</p>
             <div>
                 {
                     (function () {
