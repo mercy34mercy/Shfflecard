@@ -46,7 +46,7 @@ export const Listinputbar = () => {
                         for (let i = 0; i < barindex; i++) {
                             list.push(<Inputbar key={i} index={i} handlechange={setmember} statevalue={member} barindex={barindex} handlechangeindex={setbarindex}></Inputbar>);
                         }
-                        return <ul>{list}</ul>;
+                        return <div>{list}</div>;
                     }())
                 }
             </div>

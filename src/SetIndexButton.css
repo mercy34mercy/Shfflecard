@@ -1,0 +1,14 @@
+.indexbutton button {
+    background: transparent;
+    border-radius: 1rem;
+    max-width: 3rem;
+    max-height: 3rem;
+    width: 10%;
+    height: 10%;
+    border: none;
+    box-shadow: 0 7px 15px 3px rgba(0,0,0,.15);
+}
+
+.indexbutton {
+    margin-top: 1rem;
+}

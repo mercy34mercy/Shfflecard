@@ -1,4 +1,5 @@
 import React from 'react';
+import './Createinputbar.css'
 
 type props = {
     handlechange: any,
@@ -22,7 +23,7 @@ export const Inputbar = (props: props) => {
         }
     }
     return (
-        <div>
+        <div className='listinput'>
             <input type="text" value={inputvalue} onKeyPress={pressEnter} onChange={onhandlechange} />
         </div>
     )

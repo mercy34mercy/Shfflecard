@@ -19,7 +19,7 @@ export const Start = (props:props) => {
             <div>
                 <p>{ props.people }</p>
             </div>
-            <div>
+            <div className="groupbutton">
                 <button onClick={props.handlegroupchangeup}>+</button>
                 <button onClick={props.handlegroupchangedown}>-</button>
             </div>

@@ -1,0 +1,22 @@
+.listinput input{
+    display: table-cell;
+    vertical-align: middle;
+    width: 80%;
+    border:none;
+    height: 1.5rem;
+    font-size: large;
+}
+
+.listinput{
+    display: table;
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 7px 10px 1px rgba(0,0,0,.15);
+    margin-bottom: 1rem;
+}
+  
+  input[type=text]:focus {
+    outline: none;
+  }
+  

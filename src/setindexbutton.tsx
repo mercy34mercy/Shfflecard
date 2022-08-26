@@ -1,3 +1,5 @@
+import './SetIndexButton.css'
+
 type props = {
     handlechangeindex: any,
     handleindex:number
@@ -12,7 +14,7 @@ export const Indexbutton = (props:props) => {
     }
 
     return (
-        <div>
+        <div className="indexbutton">
             <button onClick={handlechangeup}>+</button>
             <button onClick={handlechangedown}>-</button>
         </div>
